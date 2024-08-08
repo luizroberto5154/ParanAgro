@@ -1,0 +1,338 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+ /* barra de navegação */
+ .logo{
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+ }
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    background-color: #78B159;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 0.5em;
+}
+
+.navbar .links-esquerdos a {
+    padding: 0.5em 1em;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.navbar .links-esquerdos a:hover {
+    padding: 0.5em 1em;
+    background-color: rgb(34, 28, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.navbar .links-direitos a {
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.navbar .links-direitos a:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+/*produto*/
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.produtos-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.produtos-image {
+    width: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+.produtos-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.produtos-details {
+    padding: 20px;
+    width: 50%;
+}
+.produtos-details h1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+.produtos-details .tag {
+    display: inline-block;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.produtos-details .price {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #333;
+}
+.produtos-details p {
+    margin: 10px 0;
+}
+.produtos-details .dropdowns {
+    display: flex;
+    justify-content: space-between;
+}
+.produtos-details .dropdown {
+    width: 48%;
+    display: contents;
+}
+.produtos-details select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" fill="%23999"/></svg>') no-repeat right 10px center;
+    background-color: #fff;
+    background-size: 12px;
+}
+.produtos-details select:focus {
+    outline: none;
+    border-color: #000;
+}
+.produtos-details button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.produtos-details .faq {
+    margin-top: 20px;
+}
+.produtos-details .faq h2 {
+    font-size: 18px;
+}
+.produtos-details .faq p {
+    margin: 5px 0;
+}
+
+/*reviews do produto*/
+.reviews {
+    margin-top: 40px;
+    display: flex;
+}
+.reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.review-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+    width: 30%;
+    vertical-align: top;
+}
+.review-card .review-header {
+    display: flex;
+    justify-content: space-between;
+}
+.review-card .review-header img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.review-card .review-header .reviewer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.review-card .review-header .reviewer-info span {
+    font-size: 14px;
+}
+
+/* rodapé do site */
+.rodapé {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #354d1d 100%, #306B18 100%);
+    color: #eee;
+    font-family: sans-serif;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-links a {
+    color: #eee;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+/* Responsivo para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    padding: 10px;
+    margin: 0px;
+    flex-direction: row;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.navbar a {
+    font-size: 0.9em;
+}
+
+.navbar .links-esquerdos a{
+  padding: 0.5em 0.5em;
+}
+
+footer .container {
+    padding: 10px;
+}
+  .container {
+      padding: 0 10px;
+  }
+
+  .produtos-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .produtos-image,
+  .produtos-details {
+      width: 100%;
+  }
+
+  .produtos-details h1 {
+      font-size: 20px;
+  }
+
+  .produtos-details .price {
+      font-size: 24px;
+  }
+
+  .produtos-details .dropdowns {
+      flex-direction: column;
+  }
+
+  .produtos-details .dropdown {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .review-card {
+      width: 90%;
+      margin: 10px 0;
+  }
+
+  .footer-links a {
+      margin: 0 5px;
+  }
+
+  .copyright {
+      font-size: 12px;
+  }
+
+  .produtos-details select {
+    padding: 10px;
+    width: 85%;
+  }
+  .produtos-details button{
+    width: 90%;
+  }
+}
+
+/* Responsivo para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+  .navbar a {
+      font-size: 0.8em;
+      padding: 0.5em;
+  }
+
+  .produtos-details h1 {
+      font-size: 18px;
+  }
+
+  .produtos-details .price {
+      font-size: 20px;
+  }
+
+  .footer-links a {
+      margin: 0 3px;
+  }
+
+  .copyright {
+      font-size: 10px;
+  }
+}
