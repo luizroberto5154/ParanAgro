@@ -131,3 +131,44 @@ body {
   .copyright {
     font-size: 14px;
   }
+
+   /* Responsivo para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        padding: 10px;
+        margin: 0px;
+        flex-direction: row;
+    }
+
+    .navbar .logo {
+        width: 80px;
+        height: 50px;
+        margin-bottom: 1em;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+    }
+
+    footer .container {
+        padding: 10px;
+    }
+    .contact-form{
+        width: 80%;
+    }
+}
+/* Responsivo para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 0.8em;
+        padding: 0.5em;
+    }
+    .footer-links a {
+        margin: 0 5px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
